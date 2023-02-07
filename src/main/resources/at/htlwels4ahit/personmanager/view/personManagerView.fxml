@@ -36,7 +36,7 @@
         <columns>
             <TableColumn editable="false" prefWidth="105.40000915527344" text="id" />
             <TableColumn editable="false" prefWidth="267.39996337890625" text="name" />
-            <TableColumn editable="false" text="residence" />
+            <TableColumn editable="false" text="address" />
         </columns>
         <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
