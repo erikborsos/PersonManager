@@ -56,31 +56,6 @@ public class DBUtils {
         return true;
     }
 
-    /**
-     * Executes the specified query and returns the result set.
-     *
-     * @param query The query to be executed.
-     * @return The result set obtained from the query.
-     * @throws SQLException If a database access error occurs.
-     */
-    public ResultSet query(String query) throws SQLException {
-        return connection.prepareStatement(query).executeQuery();
-    }
-
-    /**
-     * Executes the specified update query and returns the number of rows affected.
-     *
-     * @param query The update query to be executed.
-     * @return The number of rows affected by the update query.
-     * @throws SQLException If a database access error occurs.
-     */
-    public int update(String query) throws SQLException {
-        Statement statement = connection.createStatement();
-        int result = statement.executeUpdate(query);
-        statement.close();
-        return result;
-    }
-
     public boolean tableExists(String tableName) throws SQLException {
         DatabaseMetaData meta = connection.getMetaData();
         ResultSet resultSet = meta.getTables(null, null, tableName, new String[] {"TABLE"});

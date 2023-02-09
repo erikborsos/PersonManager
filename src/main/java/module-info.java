@@ -7,4 +7,6 @@ module at.htlwels4ahit.personmanager {
     exports at.htlwels4ahit.personmanager;
     exports at.htlwels4ahit.personmanager.controller;
     opens at.htlwels4ahit.personmanager.controller to javafx.fxml;
+
+    opens at.htlwels4ahit.personmanager.model;
 }

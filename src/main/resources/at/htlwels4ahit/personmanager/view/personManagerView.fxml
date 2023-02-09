@@ -27,7 +27,7 @@
             <Label text="Adress:" />
             <TextField fx:id="address" />
         </VBox>
-        <Button mnemonicParsing="false" prefWidth="75.0" text="Insert" />
+        <Button fx:id="insert" mnemonicParsing="false" onAction="#add" prefWidth="75.0" text="Insert" />
     </HBox>
     <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="1">
         <Button mnemonicParsing="false" onAction="#refresh" prefWidth="75.0" text="Refresh" />

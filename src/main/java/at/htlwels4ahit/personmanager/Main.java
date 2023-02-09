@@ -25,8 +25,10 @@ public class Main extends Application {
         stage.show();
     }
 
+    public static DBUtils dbUtils;
+
     public static void main(String[] args) {
-        DBUtils dbUtils = new DBUtils("jdbc:derby://localhost:1527/B_Uebung", "B_Uebung", "B_Uebung");
+        dbUtils = new DBUtils("jdbc:derby://localhost:1527/B_Uebung", "B_Uebung", "B_Uebung");
         // Create connection
         try {
             dbUtils.open();
